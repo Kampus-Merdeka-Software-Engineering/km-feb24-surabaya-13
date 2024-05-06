@@ -2,66 +2,184 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Mengubah warna latar belakang */
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
     background-color: #fff; /* Mengubah warna latar belakang */
-    border-radius: 10px; /* Menambahkan sudut lengkung pada konten */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
 }
 
-footer {
+header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(83, 114, 160);
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: left; /* Mengatur agar menu berada di tengah */
+    margin: 0px;
+    padding: 20px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Menggunakan Flexbox */
 }
 
 nav ul li {
-    margin-bottom: 15px;
+    padding-right: 30px; /* Menambahkan jarak antar item menu */
+}
+
+nav ul li:last-child {
+    padding-right: 0; /* Menghapus margin kanan pada item terakhir */
 }
 
 nav ul li a {
-    color: #fff;
+    color: rgb(83, 114, 160);
     text-decoration: none;
-    transition: color 0.3s; /* Menambahkan transisi warna */
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Mengubah warna saat dihover */
+    background-color: rgb(83, 114, 160);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+main {
+    background-color: #fff; /* Mengubah warna latar belakang */
+    border-radius: 10px; /* Menambahkan sudut lengkung pada konten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+.home{
+    background-color: rgb(83, 114, 160);
+    color: #fff;
+    padding: 10px 50% 20px 20px;
+}
+
+.btn-home{
+    margin: 8px 4px;
+    padding: 10px 20px;
+    font-size: 12px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    color: rgb(83, 114, 160); 
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-home:hover{
+    background-color: rgb(83, 114, 160);
+    color: white;
+}
+
+article {
+    background-color: #fff;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    margin: 40px;
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* form */
+.form_container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(83, 114, 160);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(83, 114, 160);
+}
+/* form end */
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Mengubah posisi menjadi relative */
+    width: 100%;
+    clear: both; /* Mengatasi masalah footer tidak muncul di bawah konten */
+}
+
+footer > p {
+    color: #fff;
 }
 
 p {
@@ -69,44 +187,3 @@ p {
     color: #333; /* Mengubah warna teks */
     font-size: 18px; /* Menambahkan ukuran teks */
 }
-
-}
-main {
-    padding: 20px;
-    background-color: #333; /* Menggunakan warna yang sama dengan header dan footer */
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-nav {
-    display: flex; /* Menggunakan Flexbox */
-    flex-direction: column; /* Menjadikan menu menurun */
-    margin-top: 20px; /* Sesuaikan dengan jarak yang diinginkan */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-bottom: 15px; /* Menambahkan jarak antar item menu */
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-p {
-    text-align: center;
-    color: white;
-  }
