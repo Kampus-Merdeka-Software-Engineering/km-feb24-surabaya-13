@@ -1,102 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capstone Project</title>
     <!-- tambahkan stylesheet atau link ke file CSS di sini jika diperlukan -->
-    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan ke file CSS eksternal -->
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan ke file CSS eksternal -->
+  </head>
+  <body>
     <header>
-        <h1>Data Visualization</h1>
+      <p>Dashboard Team 13</p>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
-            <li><a href="menu1.html" style="text-decoration: none;">Menu 1</a></li>
-            <li><a href="menu2.html" style="text-decoration: none;">Menu 2</a></li>
-            <li><a href="menu3.html" style="text-decoration: none;">Menu 3</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html" style="text-decoration: none">Home</a></li>
+        <li><a href="menu1.html" style="text-decoration: none">Menu 1</a></li>
+        <li><a href="menu2.html" style="text-decoration: none">Menu 2</a></li>
+        <li><a href="menu3.html" style="text-decoration: none">Menu 3</a></li>
+      </ul>
     </nav>
 
     <main>
-        <div class="home">
-            <h1>Welcome To Team 13 Project</h1>
-            <h4>Here, our team is creating a website about Superstore, a leading company in the United States that sells various product categories such as technology, office supplies, and furniture.</h4>
-            <button class="btn-home" href="menu1.html">Go to Main Content</button>
+      <div class="home">
+        <h1>Welcome To Team 13 Project</h1>
+        <p>
+          Here, our team is creating a website about Superstore, a leading
+          company in the United States that sells various product categories
+          such as technology, office supplies, and furniture.
+        </p>
+        <button class="btn-home" href="menu1.html">Go to Main Content</button>
+      </div>
+      <!-- artikel tentang dataset -->
+      <article>
+        <h2 style="color: rgb(83, 114, 160)">About Superstore Dataset</h2>
+        <p>
+          This dataset provides detailed insights into the operations of a
+          Superstore Giant, covering orders, customers, products, and sales. It
+          includes essential order details like order IDs, dates, and shipping
+          information, along with customer demographics and geographic data.
+          Product information encompasses categories, sub-categories, and sales
+          figures, while sales and profit data shed light on performance metrics
+          such as discounts and profitability. With these insights, businesses
+          can analyze sales performance, identify top-selling products,
+          understand customer preferences, and optimize strategies to improve
+          competitiveness in the market.
+        </p>
+      </article>
+      <!-- tempat untuk menjelaskan fungsi setiap halaman web -->
+      <div class="description">
+        <h2 style="color: rgb(83, 114, 160)">
+          What You Can Find In Our Website
+        </h2>
+        <div class="container">
+          <div class="card">
+            <img src="analytics.png" alt="Chart Icon" />
+            <h2>Menu 1</h2>
+            <p>Click here to learn more about Menu 1</p>
+            <a href="menu1.html">Visit Menu 1</a>
+          </div>
+          <div class="card">
+            <img src="sales.png" alt="Chart Icon" />
+            <h2>Menu 2</h2>
+            <p>Click here to learn more about Menu 2</p>
+            <a href="menu2.html">Visit Menu 2</a>
+          </div>
+          <div class="card">
+            <img src="report.png" alt="Chart Icon" />
+            <h2>Menu 3</h2>
+            <p>Click here to learn more about Menu 3</p>
+            <a href="menu3.html">Visit Menu 3</a>
+          </div>
+          <div class="card">
+            <img src="positioning.png" alt="Chart Icon" />
+            <h2>Menu 4</h2>
+            <p>Click here to learn more about Menu 4</p>
+            <a href="menu4.html">Visit Menu 4</a>
+          </div>
         </div>
-        <!-- artikel tentang dataset -->
-        <article>
-            <h2 style="color: rgb(83, 114, 160);">About Superstore Dataset</h2>
-            <p>
-                This dataset provides detailed insights into the operations of a Superstore Giant, covering orders, customers, products, and sales. It includes essential order details like order IDs, dates, and shipping information, along with customer demographics and geographic data. Product information encompasses categories, sub-categories, and sales figures, while sales and profit data shed light on performance metrics such as discounts and profitability. With these insights, businesses can analyze sales performance, identify top-selling products, understand customer preferences, and optimize strategies to improve competitiveness in the market.
-            </p>
-        </article>
-        <!-- tempat untuk menjelaskan fungsi setiap halaman web -->
-        <div class="description">
-            <h2 style="color: rgb(83, 114, 160);">What You Can Find In Our Website</h2>
-            <div class="container">
-                <div class="card">
-                    <img src="analytics.png" alt="Chart Icon">
-                    <h2>Menu 1</h2>
-                    <p>Click here to learn more about Menu 1</p>
-                    <a href="menu1.html">Visit Menu 1</a>
-                </div>
-                <div class="card">
-                    <img src="sales.png" alt="Chart Icon">
-                    <h2>Menu 2</h2>
-                    <p>Click here to learn more about Menu 2</p>
-                    <a href="menu2.html">Visit Menu 2</a>
-                </div>
-                <div class="card">
-                    <img src="report.png" alt="Chart Icon">
-                    <h2>Menu 3</h2>
-                    <p>Click here to learn more about Menu 3</p>
-                    <a href="menu3.html">Visit Menu 3</a>
-                </div>
-                <div class="card">
-                    <img src="positioning.png" alt="Chart Icon">
-                    <h2>Menu 4</h2>
-                    <p>Click here to learn more about Menu 4</p>
-                    <a href="menu4.html">Visit Menu 4</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </main>
 
     <!-- form -->
     <div class="form_container">
-        <h2>Feedback Form</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="" disabled selected>Select Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Prefer not to say</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment" rows="4" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+      <h2>Feedback Form</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
 
     <footer>
-        <p>&copy; 2024 RevoU Software Engineer Section Surabaya Team 13. All Rights Reserved.</p>
+      <p>
+        &copy; 2024 RevoU Software Engineer Section Surabaya Team 13. All Rights
+        Reserved.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
