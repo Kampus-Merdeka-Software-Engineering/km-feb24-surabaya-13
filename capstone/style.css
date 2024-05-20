@@ -1,199 +1,240 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff; /* Mengubah warna latar belakang */
-  box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2E6A86, #5D98C4);
+    color: white;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  font-weight: bold;
-  font-size: 14pt;
-  padding: 8px;
-  text-align: center;
+    background-color: #072248;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
-  background-color: rgb(255, 255, 255);
-  color: rgb(83, 114, 160);
-  display: flex; /* Menggunakan Flexbox */
-  justify-content: left; /* Mengatur agar menu berada di tengah */
-  margin: 0px;
-  padding: 20px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Menggunakan Flexbox */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-nav ul li {
-  padding-right: 10px; /* Menambahkan jarak antar item menu */
+nav li {
+    margin-right: 20px;
 }
 
-nav ul li:last-child {
-  padding-right: 0; /* Menghapus margin kanan pada item terakhir */
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
-nav ul li a {
-  color: rgb(83, 114, 160);
-  text-decoration: none;
-  padding: 11px 20px;
-  border-radius: 7px;
-  font-weight: bold;
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 65vh; /* Set the height of the hero section to the full viewport height */
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('revou.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Set the z-index of the background image to be behind the text */
+  }
+  
+  .hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #072248;
+    text-align: center;
+    font-size: 2rem; /* atur font-size sesuai kebutuhan */
+    border-radius: 10px;
+    background-color: rgba(164, 158, 158, 0.868);
+    backdrop-filter: blur(10px); /* Add blur effect */
+}
+  
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh; /* Set the height of the about section to half of the viewport height */
+    padding: 20px;
+    margin-top: 200px;
+    
+  }
+  
+  .about .image {
+    width: 50%;
+  }
+  
+  .about .text {
+    width: 50%;
+    text-align: justify;
+    margin-top: 100px;
+  }
+
+  .about-title {
+    position: absolute; /* Position the title absolute to its parent element */
+    top: 50%; /* Vertically center the title */
+    left: 50%; /* Horizontally center the title */
+    transform: translate(-50%, -50%); /* Move the title up and left by half of its own width and height */
+    text-align: center; /* Center the text */
+    width: 100%; /* Make the title take up the full width of its parent element */
+    color: black; /* Set the text color */
+    padding: 10px; /* Add some padding around the title */
+    margin: 0; /* Remove the default margin */
 }
 
-nav ul li a:hover {
-  background-color: rgb(83, 114, 160);
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+.image {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
 }
 
-main {
-  background-color: #fff; /* Mengubah warna latar belakang */
-  border-radius: 10px; /* Menambahkan sudut lengkung pada konten */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+.image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.home {
-  background-color: rgb(83, 114, 160);
-  color: #fff;
-  padding: 10px 50% 20px 20px;
+.text {
+    width: 60%;
 }
 
-.btn-home {
-  margin: 8px 4px;
-  padding: 10px 20px;
-  font-size: 11pt;
-  font-weight: bold;
+.text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.our-team {
+  margin-top: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 45px;
+    color: #fff;
+}
+
+.team-member {
+    display: inline-block; /* Display team member sections side by side */
+    margin: 0 1em; /* Add space between team member sections */
+  }
+  
+  .team-member {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}  
+  .team-member p {
+    margin: 0; /* Remove default margin from the paragraph */
+    font-size: 3 em; /* Increase the font size of the title */
+  }
+
+.team-section {
+    text-align: center; /* Center the heading horizontally */
+  }
+  
+  .team-title {
+    margin-bottom: 2em; /* Add space between the heading and team member section */
+    font-size: 2.5em; /* Increase the font size of the title */
+  }
+
+footer {
+    background-color: #072248;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    text-align: center;
+    justify-content: center;
+  }
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+ }
+
+ .container {
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.about-section {
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  background-color: white;
-  color: rgb(83, 114, 160);
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+  margin-bottom: 40px;
 }
 
-.btn-home:hover {
-  background-color: rgb(83, 114, 160);
-  color: white;
+.about-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
 }
 
-article {
-  background-color: #fff;
-  margin-top: 50px;
+.about-section p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.project-background-section {
   text-align: center;
+  margin-top: 100px;
 }
 
-.description {
-  text-align: center;
-  margin: 40px;
+.project-background-section h2 {
+  font-size: 2em;
+  margin-bottom: 75px;
+  margin-top: 75px;
 }
 
-.container {
-  background-color: #fff;
+.box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
-.card {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
-  padding: 30px 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.card a {
-  padding: 10px 20px;
-  background-color: rgb(83, 114, 160);
-  color: white;
-  text-decoration: none;
+.box {
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  font-weight: bold;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
-  width: 80px;
-  height: 80px;
+.box h3 {
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
-/* form */
-.form_container {
-  width: 400px;
-  margin: 50px auto;
-  background-color: #fff;
-  padding: 20px 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 380px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#gender {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: rgb(83, 114, 160);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: rgb(83, 114, 160);
-}
-/* form end */
-
-/* footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  position: relative; /* Mengubah posisi menjadi relative */
-  clear: both; /* Mengatasi masalah footer tidak muncul di bawah konten */
-}
-
-footer > p {
-  color: #fff;
+.box p {
+  line-height: 1.6;
 }
