@@ -1,121 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Capstone Project</title>
-    <!-- tambahkan stylesheet atau link ke file CSS di sini jika diperlukan -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Menghubungkan ke file CSS eksternal -->
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-      <p>Dashboard Team 13</p>
+        <div class="logo">
+            <h1>Super Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html" style="text-decoration: none">Home</a></li>
-        <li><a href="menu1.html" style="text-decoration: none">Menu 1</a></li>
-        <li><a href="menu2.html" style="text-decoration: none">Menu 2</a></li>
-        <li><a href="menu3.html" style="text-decoration: none">Menu 3</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <div class="home">
-        <h1>Welcome To Team 13 Project</h1>
-        <p>
-          Here, our team is creating a website about Superstore, a leading
-          company in the United States that sells various product categories
-          such as technology, office supplies, and furniture.
-        </p>
-        <button class="btn-home" href="menu1.html">Go to Main Content</button>
-      </div>
-      <!-- artikel tentang dataset -->
-      <article>
-        <h2 style="color: rgb(83, 114, 160)">About Superstore Dataset</h2>
-        <p>
-          This dataset provides detailed insights into the operations of a
-          Superstore Giant, covering orders, customers, products, and sales. It
-          includes essential order details like order IDs, dates, and shipping
-          information, along with customer demographics and geographic data.
-          Product information encompasses categories, sub-categories, and sales
-          figures, while sales and profit data shed light on performance metrics
-          such as discounts and profitability. With these insights, businesses
-          can analyze sales performance, identify top-selling products,
-          understand customer preferences, and optimize strategies to improve
-          competitiveness in the market.
-        </p>
-      </article>
-      <!-- tempat untuk menjelaskan fungsi setiap halaman web -->
-      <div class="description">
-        <h2 style="color: rgb(83, 114, 160)">
-          What You Can Find In Our Website
-        </h2>
-        <div class="container">
-          <div class="card">
-            <img src="analytics.png" alt="Chart Icon" />
-            <h2>Menu 1</h2>
-            <p>Click here to learn more about Menu 1</p>
-            <a href="menu1.html">Visit Menu 1</a>
-          </div>
-          <div class="card">
-            <img src="sales.png" alt="Chart Icon" />
-            <h2>Menu 2</h2>
-            <p>Click here to learn more about Menu 2</p>
-            <a href="menu2.html">Visit Menu 2</a>
-          </div>
-          <div class="card">
-            <img src="report.png" alt="Chart Icon" />
-            <h2>Menu 3</h2>
-            <p>Click here to learn more about Menu 3</p>
-            <a href="menu3.html">Visit Menu 3</a>
-          </div>
-          <div class="card">
-            <img src="positioning.png" alt="Chart Icon" />
-            <h2>Menu 4</h2>
-            <p>Click here to learn more about Menu 4</p>
-            <a href="menu4.html">Visit Menu 4</a>
-          </div>
+        <section class="hero">
+            <h2><i>Capstone Project Software Development<br>by Team 13</i></h2>
+        </section>
+    <section class="about">
+      <div class="container">
+        <div class="about-section">
+            <h1>About</h1>
+            <p>Welcome to Our Website</p>
+            <p>Website ini merupakan hasil kerja sama team 13-Surabaya untuk menyelesaikan tugas Capstone Project Software Development. Dalam website ini ditampilkan beberapa Visualisasi data dalam bentuk Dasborad yang merupakan hasil analisis dari modul sebelumnya yaitu Data Analitics.</p>
         </div>
-      </div>
-    </main>
-
-    <!-- form -->
-    <div class="form_container">
-      <h2>Feedback Form</h2>
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+        <div class="project-background-section">
+            <h2>Project Background</h2>
+            <div class="box-container">
+                <div class="box">
+                    <h3>Superstore Background</h3>
+                    <p>Superstore merupakan sebuah perusahaan terkemuka di United State yang menjual berbagai kategori produk seperti teknologi, office supply, dan furniture.</p>
+                </div>
+                <div class="box">
+                    <h3>Problem Issue</h3>
+                    <p>Dengan meningkatnya permintaan dan persaingan ketat di pasar, Superstore ingin memahami produk, wilayah, kategori, dan segmen pelanggan mana yang harus mereka targetkan atau hindari.</p>
+                </div>
+                <div class="box">
+                    <h3>Problem Statement</h3>
+                    <p>Bagaimana meningkatkan profit pada superstore dari tahun 2017 hingga tahun 2018 sebesar 26,06%.</p>
+                </div>
+                <div class="box">
+                    <h3>Objective</h3>
+                    <p>Meningkatkan profit Superstore dari tahun 2017 hingga tahun 2018 sebesar 26,06%.</p>
+                </div>
+                <div class="box">
+                    <h3>Scope</h3>
+                    <p>Data diperoleh dari peningkatan profit pada Superstore dari tahun 2017 sampai dengan tahun 2018.</p>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="gender">Gender:</label>
-          <select id="gender" name="gender">
-            <option value="" disabled selected>Select Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Prefer not to say</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="comment">Comment:</label>
-          <textarea id="comment" name="comment" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
     </div>
-
+    </section>
+        <section class="our-team">
+            <div class="team-section">
+                <h2 class="team-title">Our Team</h2>
+                <div class="team-member">
+                  <img src="team-member1.jpg" alt="Team Member 1">
+                  <p>Project Leader</p>
+                  <p>Eka Surya Rizki Umardani</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Front End Engineer</p>
+                    <p>Elga Syahira</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Front End Engineer</p>
+                  <p>Zahrotus Syaidah</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Front End Engineer</p>
+                  <p>Anastasius Umar Jeklin</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Front End Engineer</p>
+                  <p>Muhammad Khysam Firdaus</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Development</p>
+                  <p>Aqil Nabila Musaffa</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Pitch Deck</p>
+                  <p>Chikka Dwiyandhini Prameswari</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Pitch Deck</p>
+                    <p>Winna Elysia</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Pitch Deck</p>
+                    <p>Puji Nurhidayah</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Quality Assurance</p>
+                    <p>Aminun Ihsani</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Quality Assurance</p>
+                    <p>Andika Tri Octa Setiawan</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <p>Quality Assurance</p>
+                    <p>Muhammad Khysam Firdaus</p>
+                  </div>
+              </div>
+        </section>
+    </main>
     <footer>
-      <p>
-        &copy; 2024 RevoU Software Engineer Section Surabaya Team 13. All Rights
-        Reserved.
-      </p>
+        <div class="footer-text">
+            &copy; 2024 RevoU Software Engineer Section Surabaya Team 13. All Rights Reserved.
+          </div>
     </footer>
-  </body>
+</body>
 </html>
