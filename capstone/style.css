@@ -64,11 +64,9 @@ nav a {
     color: #072248;
     text-align: center;
     font-size: 2rem; /* atur font-size sesuai kebutuhan */
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(198, 183, 183, 0.868);
     backdrop-filter: blur(1px); /* Add blur effect */
-    padding: 2rem;
-    width: 100px;
 }
   
   .about {
