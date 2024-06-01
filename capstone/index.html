@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Store</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about1">About</a></li>
+                <li><a href="#about1" id='on_click_a'>About</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
             </ul>
         </nav>
@@ -30,6 +31,16 @@
             <p>Welcome to Our Website</p>
             <p>Website ini merupakan hasil kerja sama team 13-Surabaya untuk menyelesaikan tugas Capstone Project Software Development. Dalam website ini ditampilkan beberapa Visualisasi data dalam bentuk Dashboard yang merupakan hasil analisis dari modul sebelumnya yaitu Data Analitics.</p>
         </div>
+        <script>
+          $(document).ready(function(){
+              $("#on_click_a").on('click', function(event) {
+                  event.preventDefault();
+                  $('html, body').animate({
+                      scrollTop: $("#about1").offset().top
+                  }, 800); // 800 ms is the duration of the scroll animation
+              });
+          });
+      </script>
         <div class="project-background-section">
             <h2>Project Background</h2>
             <div class="box-container">
@@ -59,66 +70,68 @@
     </section>
         <section class="our-team">
             <div class="team-section">
+              <br>
+              <br>
                 <h2 class="team-title">Our Team</h2>
                 <div class="team-member">
-                  <img src="team-member1.jpg" alt="Team Member 1">
-                  <p>Project Leader</p>
-                  <p>Eka Surya Rizki Umardani</p>
+                  <img src="danny.jpg" width="200" height="200" alt="Team Member 1" class="team-image rounded-image">
+                  <p><b>Eka Surya Rizki Umardani</b></p>
+                  <p>Project Leader + Pitch Deck</p>
                 </div>
                 <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <img src="elga.jpg" width="200" height="200" alt="Team Member 2" class="team-image rounded-image">
+                    <p><b>Elga Syahira</b></p>
                     <p>Front End Engineer</p>
-                    <p>Elga Syahira</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
-                    <p>Front End Engineer</p>
-                  <p>Zahrotus Syaidah</p>
+                    <img src="aida.jpg" width="200" height="200" alt="Team Member 3" class="team-image rounded-image">
+                    <p><b>Zahrotus Syaidah</b></p>
+                  <p>Front End Engineer</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
-                    <p>Front End Engineer</p>
-                  <p>Anastasius Umar Jeklin</p>
+                    <img src="team-member1.jpg" width="200" height="200" alt="Team Member 4" class="team-image rounded-image">
+                    <p><b>Anastasius Umar Jeklin</b></p>
+                  <p>Front End Engineer</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
-                    <p>Front End Engineer</p>
-                  <p>Muhammad Khysam Firdaus</p>
+                    <img src="sam.jpg" width="200" height="200" alt="Team Member 5" class="team-image rounded-image">
+                    <p><b>Muhammad Khysam Firdaus</b></p>
+                  <p>Front End Engineer + Quality Assurance</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
-                    <p>Development</p>
-                  <p>Aqil Nabila Musaffa</p>
+                    <img src="team-member1.jpg" width="200" height="200" alt="Team Member 6" class="team-image rounded-image">
+                    <p><b>Aqil Nabila Musaffa</b></p>
+                  <p>Front End Engineer + Website Development</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <img src="chikka.jpg" width="200" height="200" alt="Team Member 7" class="team-image rounded-image">
+                    <p><b>Chikka Dwiyandhini Prameswari</b></p>
+                  <p>Pitch Deck</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="winna.jpg" width="200" height="200" alt="Team Member 8" class="team-image rounded-image">
+                    <p><b>Winna Elysia</b></p>
                     <p>Pitch Deck</p>
-                  <p>Chikka Dwiyandhini Prameswari</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <img src="puji.jpg" width="200" height="200" alt="Team Member 9" class="team-image rounded-image">
+                    <p><b>Puji Nurhidayah</b></p>
                     <p>Pitch Deck</p>
-                    <p>Winna Elysia</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
-                    <p>Pitch Deck</p>
-                    <p>Puji Nurhidayah</p>
-                  </div>
-                  <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <img src="aminun.jpg" width="200" height="200" alt="Team Member 10" class="team-image rounded-image">
+                    <p><b>Aminun Ihsani</b></p>
                     <p>Quality Assurance</p>
-                    <p>Aminun Ihsani</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <img src="andika.jpg" width="200" height="200" alt="Team Member 11" class="team-image rounded-image">
+                    <p><b>Andika Tri Octa Setiawan</b></p>
                     <p>Quality Assurance</p>
-                    <p>Andika Tri Octa Setiawan</p>
                   </div>
                   <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <img src="diva.jpg" width="200" height="200" alt="Team Member 12" class="team-image rounded-image">
+                    <p><b>Diva Asih Azzahra</b></p>
                     <p>Quality Assurance</p>
-                    <p>Diva Asih Azzahra</p>
                   </div>
               </div>
         </section>
