@@ -41,6 +41,23 @@
             <h2><i>Capstone Project Software Development<br>by Team 13</i></h2>
         </section>
     <section class="about" id="about_section">
+        <style>
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/fixbg.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Set the z-index of the background image to be behind the text */
+        }
+        .hero {
+            position: relative; /* Ensure the hero element is positioned relative for the pseudo-element to be positioned absolute within it */
+        }
+    </style>
       <div class="container">
         <div class="about-section" id="about1">
             <h1>About</h1>
@@ -115,7 +132,7 @@
                   <p>Front End Engineer + Quality Assurance</p>
                   </div>
                   <div class="team-member">
-                    <img src="img/aqil.jpg" width="200" height="200" alt="Team Member 6" class="team-image rounded-image">
+                    <img src="img/aqil.png" width="200" height="200" alt="Team Member 6" class="team-image rounded-image">
                     <p><b>Aqil Nabila Musaffa</b></p>
                   <p>Front End Engineer + Website Development</p>
                   </div>
