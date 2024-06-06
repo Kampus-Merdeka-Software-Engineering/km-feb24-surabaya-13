@@ -1,6 +1,19 @@
 @charset "UTF-8";
-.dataTables_wrapper {
-  padding: 50px 200px;
+select#opsi {
+  margin-left: 7%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+div#example_wrapper {
+  margin-top: 7%;
+  padding:0% 7%;
+}
+
+#dt-length-0 option {
+  color: black
 }
 
 /* Optional: Style adjustments for DataTables elements */
