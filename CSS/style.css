@@ -98,14 +98,15 @@
 }
 
 .chart-item .description {
-  padding: 15px 10px;
+  margin-top: -1.5px;
+  padding: 10px;
   text-align: center;
   font-size: 10pt;
   font-weight: bold;
   font-style: italic;
 }
 
-.container {
+.container_profit {
   display: flex;
   justify-content: center;
   background-color: white;
